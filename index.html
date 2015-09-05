@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>South Of Main Block Watch</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+<!-- Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!-- Google Map -->
+   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true" class="img-responsive"></script>
+    <script>
+// This example creates a simple polygon representing the Bermuda Triangle.
+function initialize() {
+  var mapOptions = {
+    zoom: 15,
+    center: new google.maps.LatLng(39.955958, -82.95424600000001),
+    mapTypeId: google.maps.MapTypeId.TERRAIN
+  };
+
+  var bermudaTriangle;
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  // Define the LatLng coordinates for the polygon's path.
+  var triangleCoords = [
+    new google.maps.LatLng(39.957731, -82.96335339546204),
+    new google.maps.LatLng(39.95730336653257, -82.94496417045593),
+    new google.maps.LatLng(39.953059701383516, -82.94367671012878),
+    new google.maps.LatLng(39.95416176376878, -82.96352505683899)
+  ];
+
+  // Construct the polygon.
+  bermudaTriangle = new google.maps.Polygon({
+    paths: triangleCoords,
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#ffc4c4',
+    fillOpacity: 0.35
+  });
+
+  bermudaTriangle.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+</head>
+<body>
+<!--Main Nav Bar -->
+<nav  class="navbar navbar-inverse affix" >
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a id="headerlogo" class="navbar-brand" href="#">South of Main Block Watch</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+    
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#boundaries">Boundaries</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#members">Members</a></li>
+       <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--- Header -->
+<section class="top">
+	<div class="container">
+	 <div class="row">
+  <div class="main-header-text">
+		<div class="sml-text">Welcome to the</div>
+		<div class="lrg-text">South of Main</div>
+		<div class="lrg-text">Block Watch</div>
+  </div>
+	</div>
+		<div class="row mainbutton">
+    <a href="#boundaries" id="main-button" class="btn-primary" role="button">Tell Me More</a>
+  </div>
+	</div>
+</section>
+<section id="boundaries">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="boundaries-heading">Boundaries</h2>
+				<h3 class="boundaries-sub-text">The boundaries for the South of Main area are Kimball Place (West) to Alum Creek Drive (East) and East Main Street (North) to Cole Street (South). </h3>
+			  <div id="map-canvas"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="photos">
+  <div class="container">
+    <div class="row row-centered">
+      <div class="col-lg-12">
+        <h2 class="boundaries-heading">Photos</h2>
+            <h3 class="boundaries-sub-text">The South of Main area is beautiful and we aim to keep it that way! Check out a few images of our favorite parts of the neighborhood. Want to share a few of your favorite photos? Send them to SOMblockwatch@gmail.com.</h3>
+       </div>
+     </div>
+   </div>
+       <!-- Image trigger modal -->
+       <div class="container">
+       <div class="row">
+<!--PIC1-->    
+               <div class="col-md-4">
+<div class="img-fade" data-toggle="modal" data-target="#myModal1"><img src="images/portfolio/wide pic of pocket park sml.jpg" class="img-responsive center-block"></div>
+  <!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     
+      <div class="modal-body">
+        <img class="img-responsive" src="images/portfolio/wide pic of pocket park.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="modalbtn" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+   <div class="picturetitle img-responsive center-block" >
+      <h4>Pocket Park</h4>
+      <p id="graytext"></p>
+   </div>
+</div>
+<!--PIC2-->
+               <div class="col-md-4">
+<div class="img-fade txt-overlay" data-toggle="modal" data-target="#myModal2"><img src="images/portfolio/cole street sign sml.jpg"  class="img-responsive center-block"></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-responsive" src="images/portfolio/cole street sign.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="modalbtn" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+   <div class="picturetitle center-block">
+      <h4>Flower Garden Sign</h4>
+      <p id="graytext"></p>
+   </div>
+</div>
+<!--PIC3-->
+               <div class="col-md-4">
+<div class="img-fade" data-toggle="modal" data-target="#myModal3"><img src="images/portfolio/sculpture sml.jpg" class="img-responsive center-block"></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-responsive" src="images/portfolio/sculpture.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="modalbtn" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+   <div class="picturetitle center-block">
+      <h4>Sculpture</h4>
+      <p id="graytext"></p>
+   </div>
+</div> 
+<!--PIC4-->    
+               <div class="col-md-4">
+<div class="img-fade" data-toggle="modal" data-target="#myModal4"><img  src="images/portfolio/cole street flowers sml.jpg" class="img-responsive center-block"></div>
+<!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="img-responsive" src="images/portfolio/cole street flowers.jpg">
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="modalbtn" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+   <div class="picturetitle center-block" >
+      <h4>Cole Street Flowers</h4>
+      <p id="graytext"></p>
+   </div>
+</div>
+</div>
+</div>
+</section>
+<!--About Section-->
+
+<!-- Member Section -->
+<section id="members">
+<div class="container">
+    <div class="row">
+       <div class="col-lg-12 text-center">
+          <h2 class="boundaries-heading">Members</h2>
+                    <h3 class="boundaries-sub-text" id="section-sub-txt">Names and photos coming soon</h3>
+                </div>
+  </div>
+
+<div class="row">
+  <div class="members-row">
+  <div class="col-md-4"><img src="http://placekitten.com/g/239/239" class="member-images"><h4>Name1</h4><p>subtext</p></div>
+  <div class="col-md-4"><img src="http://placekitten.com/g/239/239" class="member-images"><h4>Name2</h4><p>subtext</p></div>
+  <div class="col-md-4"><img src="http://placekitten.com/g/239/239" class="member-images"><h4>Name3</h4><p>subtext</p></div>
+</div>
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <div class="row">
+       <div class="col-lg-12 text-center">
+          <h2 class="contact-heading">Contact Us</h2>
+                    <h3 class="contact-sub-text" id="section-sub-txt">Iste natus error sit voluptatem accusantium</h3>
+                </div>
+  </div>
+<div class="row">
+<div class="col-lg-12">
+  <div class="row">
+<form role="form" class="form-horizontal">
+<div class="form-group">
+
+  <div class="col-lg-6 left-form">
+<input type="text" class="form-control input-lg form-group" placeholder="Name*">
+<input type="text" class="form-control input-lg form-group" placeholder="Email*">
+<input type="text" class="form-control input-lg form-group" placeholder="Phone*">
+</div>
+
+<div class="col-lg-6 right-form">
+<textarea class="form-control input-lg form-group" placeholder="Message*">
+</textarea>
+</div>
+<div class="col-lg-12 text-center">
+  <button type="submit" id="main-button" class="btn btn-xl">Send Message</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- footer -->
+<section id="footer">
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center footer-icons">
+  <ul>
+    <li><i class="fa fa-facebook"></i></li>
+  <li><i class="fa fa-twitter"></i></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

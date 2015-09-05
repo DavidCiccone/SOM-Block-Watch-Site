@@ -1,0 +1,345 @@
+body {
+    
+    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    border:0;
+    margin: auto;
+    width: 100%;
+
+
+   }
+
+
+/*--Google Map Canvas--*/
+ #map-canvas {
+        width: 100%;
+        height: 500px;
+        background-color: #CCC;
+   }
+
+    
+
+/*---- Nav Bar ----*/
+.affix {
+    position: fixed;
+    width: 100%
+
+}
+
+   .container-fluid {
+
+   	max-width: 1200px;
+   	
+   }
+
+  #headerlogo {
+  	color: green;
+  	font-family:'Architects Daughter', cursive;
+  	text-transform: none;
+  	font-size: 2em;
+    font-weight: 700;
+  }
+
+   .navbar-inverse  {
+   	font-family: 'Montserrat', sans-serif;
+   	border-radius: 0px;
+   	border: none;
+   	text-transform: uppercase;
+    padding: 15px 0px;
+    letter-spacing: 1px;
+    z-index: 1;
+
+   
+   }
+
+   .navbar-inverse .navbar-nav > li > a {
+   	color: white;
+   }
+
+  .navbar-inverse .navbar-nav li > a:hover,
+.navbar-inverse .navbar-nav li > a:focus {
+	color: #99aa77;
+}
+
+
+/*---- section top ----*/
+section.top {
+	text-align: center;
+	padding: 300px 0px 200px 0px;
+	background-image: url("../images/wide_pic_of_pocket_park.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+
+	
+}
+.main-header-text {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+.sml-text {
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	font-size: 40px;
+	line-height:2.5em;
+}
+.lrg-text {
+	text-transform: uppercase;
+	font-size: 75px;
+	line-height:1.1em;
+	font-weight: 800;
+}
+
+#head-button {
+	padding: 20px, 40px;
+	color: white;
+	background-color: #fed136;
+	border-radius: 0px;
+}
+
+
+
+#main-button {
+	background-color: green;
+	
+    padding: 20px 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    outline: 0 none;
+    box-shadow: none;
+    border-radius:5px;
+    text-decoration: none;
+}
+
+#main-button:hover {
+  background-color: darkolivegreen;
+}
+
+.mainbutton {
+	margin-top: 70px;
+}
+
+/*--- Boundaies Section ---*/
+
+#boundaries {
+	padding-bottom: 100px;
+}
+
+.boundaries-heading {
+	font-size: 40px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 125px;
+	font-weight: 700;
+}
+
+.boundaries-sub-text {
+	font-size: 25px;
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 400;
+	margin-bottom: 50px;
+	color: gray;
+	text-align: center;
+}
+/*--- Photos Section ---*/
+
+#photos {
+	background-color: #f7f7f7;
+	padding-bottom: 150px;
+	margin: 0 auto;
+}
+
+
+
+.picturetitle {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: none;
+	max-width: 400px;
+	background-color: white;
+	text-align: center;
+	padding: 15px 0;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+#modalbtn {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: none;
+  color: white;
+  background-color: green;
+  font-weight: 700;
+  border: 0 transparent;
+}
+
+.img-fade {
+ 
+  -webkit-transition: background-color 0.5s;
+
+  color: transparent;
+  position: relative;
+
+}
+ 
+ .img-fade:hover {
+  background-color: rgba(0,128,0,.90);
+  color: white;
+
+
+ }
+
+.img-fade:before {
+   position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: inherit;
+   content: "+";
+   font-size: 72px;
+   text-align: center;
+   padding-top: 20%;
+  
+   -webkit-transition: content 0.5s;
+   font-family: 'Sigmar One', cursive;
+ }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-fade {
+     color: transparent;
+  position: relative;
+  max-width: 55.5%;
+margin-left: auto;
+margin-right: auto;
+  }
+}
+
+
+
+
+
+/*--- About/Timeline Section ---*/
+
+
+/*--- Members Section ---*/
+
+#members {
+  background-color: #f7f7f7;
+  padding-bottom: 150px;
+  margin: 0 auto;
+}
+
+.members-row {
+  margin: 0 auto;
+  text-align: center;
+ font-family: 'Montserrat', sans-serif;
+
+}
+
+.members-row p {
+font-style: italic;
+color: #777;
+}
+
+.member-images {
+  border-radius: 50%;
+  border: 7px solid white;
+
+ }
+/*--- Contact ---*/
+ 
+#contact {
+  background-color: #222;
+  padding-bottom: 50px;
+}
+
+ .contact-heading {
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 125px;
+  font-weight: 700;
+  color: white;
+}
+
+.contact-sub-text {
+  font-size: 25px;
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: gray;
+  text-align: center;
+}
+
+
+
+
+
+#contact-button {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact .form-group {
+    margin-bottom: 25px;
+}
+
+ .form-group input,
+ .form-group textarea {
+    padding: 20px;
+    }
+
+ .form-group input.form-control {
+    height: auto;
+}
+
+ .form-group textarea.form-control {
+    height: 247px;
+}
+
+/*--- Footer ---*/
+
+#footer {
+  background-color: white;
+  padding: 10px;
+
+}
+
+.footer-icons li {
+  font-size: 22px;
+  list-style-type: none;
+  list-style: none;
+  display: inline;
+  padding-right: 23px;
+
+}
+
+
+.fa {
+  color: white;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  padding-top: 9px
+
+ }
+
+.fa:hover {
+  background-color: darkolivegreen;
+}
+
+.fa:before {
+  transition: content 0.5s;
+}
+
+ #footer ul {
+  padding-top: 20px;
+ }
