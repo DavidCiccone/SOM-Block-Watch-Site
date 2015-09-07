@@ -221,6 +221,92 @@ margin-right: auto;
 
 /*--- About/Timeline Section ---*/
 
+#about {
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+#section-sub-txt, .boundaries-sub-text {
+  line-height: 1.75em;
+
+}
+
+.timeline {
+  list-style-type: none;
+  padding-top: 50px;
+}
+
+#about ul li {
+  margin-left: 50px;
+}
+
+ul > li > div  {
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: gray;
+  text-align: right;
+}
+
+ul > li > div .left-side-text {
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: bold;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: gray;
+  text-align: left;
+}
+
+ul > li > div > h4 {
+  color: black;
+}
+
+ .image-styles {
+  border-radius: 50%;
+  border: 7px solid #f1f1f1;
+  margin-left: 8px;
+
+}
+
+#text-center {
+position: relative;
+bottom: 6em;
+right: 2em;
+
+
+}
+
+.gray-line:before {
+  content: " ";
+  width: 2px;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50.00%;
+  z-index: -1;
+}
+
+@media (min-width: 687px) {
+#img-center {
+  margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+}
+
+
+}
+
+#image-two {
+  margin-right: 50%
+}
 
 /*--- Members Section ---*/
 
@@ -289,9 +375,14 @@ color: #777;
     margin-bottom: 25px;
 }
 
+ .form-group {
+  padding-left: 25px;
+ }
+
  .form-group input,
  .form-group textarea {
     padding: 20px;
+
     }
 
  .form-group input.form-control {
@@ -299,8 +390,17 @@ color: #777;
 }
 
  .form-group textarea.form-control {
-    height: 247px;
+    height: 338px;
+
 }
+
+section#contact {
+  
+ background-image: url("../images/background map3.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
 
 /*--- Footer ---*/
 
