@@ -233,38 +233,39 @@ margin-right: auto;
 
 .timeline {
   list-style-type: none;
-  padding-top: 50px;
+  position: relative;
+  
 }
 
 #about ul li {
   margin-left: 50px;
 }
 
-ul > li > div  {
+ul li div, .right-side-text  {
   display: inline-block;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
   font-style: bold;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: gray;
   text-align: right;
 }
 
-ul > li > div .left-side-text {
+ul li div, .left-side-text {
   display: inline-block;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
   font-style: bold;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: gray;
   text-align: left;
 }
 
-ul > li > div > h4 {
+ul li div h4 {
   color: black;
 }
 
@@ -275,12 +276,33 @@ ul > li > div > h4 {
 
 }
 
-#text-center {
+.text-center-box {
 position: relative;
 bottom: 6em;
 right: 2em;
+max-width: 40%;
+min-width: 40%;
+}
 
+.text-center-box-second {
+position: relative;
+bottom: 6em;
+right: 3em;
+padding-top: 8em;
+max-width: 40%;
+min-width: 40%;
+}
 
+#right-text {
+float: right;
+}
+
+.time-line-block {
+  display: block;
+}
+
+.second-img-placement {
+  padding-left: 25em;
 }
 
 .gray-line:before {
@@ -292,8 +314,13 @@ right: 2em;
   bottom: 0;
   left: 50.00%;
   z-index: -1;
+  max-height: 90%;
 }
 
+#spacing-between-timelines {
+  padding-top: 40px
+}
+/*
 @media (min-width: 687px) {
 #img-center {
   margin-left: auto;
@@ -303,9 +330,61 @@ right: 2em;
 
 
 }
+*/
 
 #image-two {
-  margin-right: 50%
+  margin-right: 50%;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+
+/*ul li div {
+   padding-right: 5em;
+
+}
+
+.text-center-box {
+
+}
+*/
+#about img {
+  width: 136px;
+  height: 136px;
+  margin-right: 1em;
+
+}
+
+
+.text-center-box {
+position: relative;
+bottom: 6em;
+right: 6em;
+padding-left: 1.5em;
+padding-right: 1.5em;
+
+}
+
+div#image {
+  margin-left: -6.5em;
+  position: absolute;
+}
+
+
+}
+
+@media only screen and (min-width: 674px) and (max-width: 990px) {
+
+#about img {
+  width: 86px;
+  height: 86px;
+}
+
+}
+
+@media only screen and (max-width: 674px) {
+
+
+
 }
 
 /*--- Members Section ---*/
@@ -390,7 +469,7 @@ color: #777;
 }
 
  .form-group textarea.form-control {
-    height: 338px;
+    height: 298px;
 
 }
 
@@ -402,6 +481,9 @@ section#contact {
     background-size: cover;
   }
 
+section#contact .text-danger {
+    color: #e74c3c;
+}
 /*--- Footer ---*/
 
 #footer {
