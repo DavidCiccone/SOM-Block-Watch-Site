@@ -314,7 +314,7 @@ float: right;
   bottom: 0;
   left: 50.00%;
   z-index: -1;
-  max-height: 90%;
+  max-height: 87.5%;
 }
 
 #spacing-between-timelines {
@@ -331,26 +331,18 @@ float: right;
 
 }
 */
-
-#image-two {
-  margin-right: 50%;
+@media only screen and (min-width: 1200px) {
+.timeline-img {
+  margin-left: -2em;
 }
-
+}
 @media only screen and (min-width: 991px) and (max-width: 1199px) {
 
-/*ul li div {
-   padding-right: 5em;
 
-}
-
-.text-center-box {
-
-}
-*/
 #about img {
   width: 136px;
   height: 136px;
-  margin-right: 1em;
+  margin-right: 2em;
 
 }
 
@@ -358,33 +350,56 @@ float: right;
 .text-center-box {
 position: relative;
 bottom: 6em;
-right: 6em;
-padding-left: 1.5em;
-padding-right: 1.5em;
-
+right: 3em;
 }
 
 div#image {
   margin-left: -6.5em;
   position: absolute;
 }
-
-
+.image-styles {
+  margin-left: -1.75em
 }
 
-@media only screen and (min-width: 674px) and (max-width: 990px) {
+.second-img-placement {
+  padding-left: 22.3em
+}
+.bump-down {
+  margin-top: 1em;
+}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 990px) {
 
 #about img {
-  width: 86px;
-  height: 86px;
+  width: 100px;
+  height: 100px;
+}
+.timeline-img {
+    margin-left: -2.5em;
+}
+.second-img-placement {
+  padding-left: 14.4em
+}
+.text-center-box {
+bottom: 1.5em;
+padding-right: .5em;
 }
 
+.time-line-block {
+  padding-bottom: 6em;
 }
+.text-center-box-second {
+   
+    bottom: 8em;
 
-@media only screen and (max-width: 674px) {
+}
+}
+@media only screen and (max-width: 766px) {
 
-
-
+#about {
+  display: none;
+}
 }
 
 /*--- Members Section ---*/
@@ -456,6 +471,7 @@ color: #777;
 
  .form-group {
   padding-left: 25px;
+  padding-right: 10px;
  }
 
  .form-group input,
